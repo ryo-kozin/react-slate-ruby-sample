@@ -198,7 +198,7 @@ const RubyComponent = ({ attributes, children, element }) => {
 	return (
 		<ruby {...attributes}>
 			{children}
-			<rt>{element.kana}</rt>
+			<rt contentEditable={false}>{element.kana}</rt>
 		</ruby>
 	);
 };
